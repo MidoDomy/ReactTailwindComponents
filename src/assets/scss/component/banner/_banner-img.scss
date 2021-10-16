@@ -1,0 +1,13 @@
+@layer components {
+  .banner-img-container {
+    @apply h-full;
+  }
+
+  .banner-img {
+    @apply max-h-full mx-auto;
+
+    &-cover {
+      @apply w-full h-full object-cover;
+    }
+  }
+}

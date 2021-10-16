@@ -1,0 +1,6 @@
+@layer components {
+  .col {
+    padding: 0 theme("container.padding");
+    @apply flex-grow;
+  }
+}

@@ -1,0 +1,45 @@
+@layer components {
+  .alert {
+    @apply mb-4 p-4 border rounded;
+
+    a {
+      @apply font-bold underline;
+    }
+  }
+
+  .alert-primary {
+    @apply bg-base-primary bg-opacity-20 border-base-primary border-opacity-30;
+  }
+
+  .alert-secondary {
+    @apply bg-base-secondary bg-opacity-20 border-base-secondary border-opacity-30;
+  }
+
+  .alert-success {
+    @apply bg-base-success bg-opacity-20 border-base-success border-opacity-30;
+  }
+
+  .alert-danger {
+    @apply bg-base-danger bg-opacity-20 border-base-danger border-opacity-30;
+  }
+
+  .alert-warning {
+    @apply bg-base-warning bg-opacity-20 border-base-warning border-opacity-30;
+  }
+
+  .alert-info {
+    @apply bg-base-info bg-opacity-20 border-base-info border-opacity-30;
+  }
+
+  .alert-light {
+    @apply bg-base-light bg-opacity-20 border-base-light border-opacity-30;
+  }
+
+  .alert-dark {
+    @apply bg-base-dark bg-opacity-20 border-base-dark border-opacity-30;
+  }
+
+  .alert-icon {
+    @apply mr-4 min-w-1;
+  }
+}

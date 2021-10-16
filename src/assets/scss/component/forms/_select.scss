@@ -1,0 +1,24 @@
+@layer components {
+  .select {
+    @apply block w-full bg-white bg-no-repeat border border-gray-300 text-base-dark appearance-none cursor-pointer transition-shadow focus:outline-none focus:shadow-lg;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+
+    &.is-disabled {
+      @apply disabled:border-gray-400 disabled:bg-gray-300 disabled:text-gray-600;
+    }
+
+    &-sm {
+      @apply py-1 px-2 rounded-sm;
+    }
+
+    &-md {
+      @apply py-1.5 px-3 rounded;
+    }
+
+    &-lg {
+      @apply py-2 px-4 rounded-md;
+    }
+  }
+}

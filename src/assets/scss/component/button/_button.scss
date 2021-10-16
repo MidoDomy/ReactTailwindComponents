@@ -1,0 +1,89 @@
+@layer components {
+  .btn {
+    @apply inline-block text-center font-normal no-underline select-none bg-transparent border border-transparent hover:bg-opacity-90 focus:shadow-md transition-all;
+
+    &.is-disabled {
+      @apply disabled:border-base-disabled disabled:bg-base-disabled disabled:text-white disabled:opacity-50;
+    }
+  }
+
+  .btn-block {
+    @apply block w-full;
+  }
+
+  .btn-sm {
+    @apply py-1 px-2 text-sm rounded-sm;
+  }
+
+  .btn-md {
+    @apply py-1.5 px-3 text-base rounded;
+  }
+
+  .btn-lg {
+    @apply py-2 px-4 text-lg rounded-md;
+  }
+
+  .btn-primary {
+    @apply border-base-primary bg-base-primary text-white;
+  }
+
+  .btn-secondary {
+    @apply border-base-secondary bg-base-secondary text-white;
+  }
+
+  .btn-light {
+    @apply border-base-light bg-base-light;
+  }
+
+  .btn-dark {
+    @apply border-base-dark bg-base-dark text-white;
+  }
+
+  .btn-success {
+    @apply border-base-success bg-base-success text-white;
+  }
+
+  .btn-danger {
+    @apply border-base-danger bg-base-danger text-white;
+  }
+
+  .btn-warning {
+    @apply border-base-warning bg-base-warning text-white;
+  }
+
+  .btn-info {
+    @apply border-base-info bg-base-info text-white;
+  }
+
+  .btn-outline-primary {
+    @apply border-base-primary text-base-primary hover:bg-base-primary hover:text-white;
+  }
+
+  .btn-outline-secondary {
+    @apply border-base-secondary text-base-secondary hover:bg-base-secondary hover:text-white;
+  }
+
+  .btn-outline-light {
+    @apply border-base-light text-base-light hover:bg-base-light hover:text-base-dark;
+  }
+
+  .btn-outline-dark {
+    @apply border-base-dark text-base-dark hover:bg-base-dark hover:text-white;
+  }
+
+  .btn-outline-success {
+    @apply border-base-success text-base-success hover:bg-base-success hover:text-white;
+  }
+
+  .btn-outline-danger {
+    @apply border-base-danger text-base-danger hover:bg-base-danger hover:text-white;
+  }
+
+  .btn-outline-warning {
+    @apply border-base-warning text-base-warning hover:bg-base-warning hover:text-white;
+  }
+
+  .btn-outline-info {
+    @apply border-base-info text-base-info hover:bg-base-info hover:text-white;
+  }
+}

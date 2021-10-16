@@ -1,0 +1,42 @@
+@layer components {
+  .slider {
+    @apply relative;
+    height: 600px;
+  }
+
+  .slider-container {
+    @apply h-full;
+  }
+
+  .slider-item {
+    @apply absolute top-0 left-0 h-full w-full transition-opacity;
+  }
+
+  .slider-item-content {
+    @apply w-full h-full flex items-center justify-center;
+  }
+
+  .slider-btn {
+    @apply absolute top-0 w-1/12 h-full flex items-center justify-center hover:bg-base-dark hover:bg-opacity-10 transition-colors;
+
+    &-prev {
+      @apply left-0;
+    }
+
+    &-next {
+      @apply right-0;
+    }
+  }
+
+  .slider-dots {
+    @apply absolute bottom-4 w-full flex justify-center items-center;
+  }
+
+  .slider-dot {
+    @apply w-3 h-3 mx-1.5 rounded-full bg-opacity-50 bg-base-primary transition-colors;
+
+    &.active {
+      @apply bg-opacity-100;
+    }
+  }
+}

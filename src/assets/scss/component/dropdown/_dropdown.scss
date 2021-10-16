@@ -1,0 +1,24 @@
+@layer components {
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-content {
+    @apply absolute top-full z-10 mt-1 py-4 px-3 shadow-lg rounded bg-white;
+    width: 250px;
+
+    .dropdown-left &{
+      @apply left-0;
+    }
+
+    .dropdown-right &{
+      @apply right-0;
+    }
+  }
+
+  .dropdown-item {
+    a {
+      @apply block py-2 hover:underline;
+    }
+  }
+}

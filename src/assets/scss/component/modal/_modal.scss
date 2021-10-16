@@ -1,0 +1,37 @@
+@layer components {
+  .modal-outer {
+    @apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-50;
+  }
+
+  .modal-close-overlay {
+    @apply absolute top-0 left-0 w-full h-full bg-base-dark bg-opacity-20;
+  }
+
+  .modal {
+    @apply relative w-full py-5 px-8 bg-white rounded-lg;
+
+    &-sm {
+      @apply max-w-md;
+    }
+
+    &-md {
+      @apply max-w-2xl;
+    }
+
+    &-lg {
+      @apply max-w-4xl;
+    }
+
+    &-xl {
+      @apply max-w-7xl;
+    }
+  }
+
+  .modal-header {
+    @apply flex items-center justify-between pb-3 border-b; 
+  }
+
+  .modal-content {
+    @apply pt-4
+  }
+}

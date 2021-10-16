@@ -1,0 +1,33 @@
+@layer components {
+  .collapse-item {
+    @apply border-t;
+  }
+
+  .collapse-btn {
+    @apply flex items-center justify-between w-full py-5 text-left hover:underline;
+
+    .is-open & {
+      .icon-plus {
+        @apply hidden;
+      }
+    }
+
+    .is-closed & {
+      .icon-plus {
+        @apply inline-block;
+      }
+
+      .icon-minus {
+        @apply hidden;
+      }
+    }
+  }
+
+  .collapse-content-outer {
+    @apply transition-all;
+  }
+
+  .collapse-content {
+    @apply pb-4;
+  }
+}

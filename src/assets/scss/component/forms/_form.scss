@@ -1,0 +1,36 @@
+@layer components {
+  .form-group {
+    @apply flex mb-4;
+
+    .form-group-text,
+     .input,
+     .select,
+     .textarea {
+      @apply rounded-none border-r-0;
+  
+      &:first-child {
+        @apply rounded-tl rounded-bl;
+      }
+  
+      &:last-child {
+        @apply rounded-tr rounded-br border-r;
+      }
+    }
+
+    .label {
+      @apply flex-shrink-0 flex items-center mb-0 px-4;
+  
+      &:first-child {
+        @apply pl-0;
+      }
+  
+      &:last-child {
+        @apply pr-0;
+      }
+    }
+  }
+
+  .form-group-text {
+    @apply flex items-center py-1.5 px-3 bg-gray-200 border border-gray-300;
+  }
+}

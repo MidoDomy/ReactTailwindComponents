@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'abstract/theme';
+
+hr {
+  margin: 10px 0;
+  border-color:  red;
+}
