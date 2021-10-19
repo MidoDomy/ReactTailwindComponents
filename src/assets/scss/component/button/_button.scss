@@ -1,9 +1,9 @@
 @layer components {
   .btn {
-    @apply inline-block text-center font-normal no-underline select-none bg-transparent border border-transparent hover:bg-opacity-90 focus:shadow-md transition-all;
+    @apply inline-block text-center font-normal no-underline select-none bg-transparent border border-transparent hover:bg-opacity-90 focus:shadow-md transition-colors;
 
     &.is-disabled {
-      @apply disabled:border-base-disabled disabled:bg-base-disabled disabled:text-white disabled:opacity-50;
+      @apply disabled:border-base-disabled disabled:bg-base-disabled disabled:text-white disabled:opacity-50 cursor-default;
     }
   }
 

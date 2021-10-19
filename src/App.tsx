@@ -4,6 +4,13 @@ import logging from './config/loggings';
 import routes from './config/routes';
 import './assets/scss/base.scss';
 
+import Container from 'components/Container/Container';
+import Row from 'components/Grid/Row';
+import Col from 'components/Grid/Col';
+
+import Header from 'layout/header';
+import SidebarNavigation from 'layout/sidebarNavigation';
+
 const App: React.FC<{}> = props => {
   useEffect(() => {
     logging.info(`Loading`)
@@ -11,26 +18,38 @@ const App: React.FC<{}> = props => {
 
   return (
     <div>
-      <BrowserRouter>
-        <Switch>
-          {routes.map((route, index) => {
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                render={(props: RouteComponentProps<any>) => (
-                  <route.component
-                    name={route.name}
-                    {...props}
-                    {...route.props}
-                  />
-                )}
-              />
-            )
-          })}
-        </Switch>
-      </BrowserRouter>
+      <Header />
+
+      <Container className="py-5">
+        <BrowserRouter>
+          <Row>
+            <Col cols={2}>
+              <SidebarNavigation />
+            </Col>
+
+            <Col cols={10}>
+              <Switch>
+                {routes.map((route, index) => {
+                  return (
+                    <Route
+                      key={index}
+                      path={route.path}
+                      exact={route.exact}
+                      render={(props: RouteComponentProps<any>) => (
+                        <route.component
+                          name={route.name}
+                          {...props}
+                          {...route.props}
+                        />
+                      )}
+                    />
+                  )
+                })}
+              </Switch>
+            </Col>
+          </Row>
+        </BrowserRouter>
+      </Container>
     </div>
   );
 }

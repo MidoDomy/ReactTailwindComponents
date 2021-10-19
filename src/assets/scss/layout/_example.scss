@@ -1,0 +1,29 @@
+.example {
+  .level {
+    .level {
+      margin-left: 10px;
+    }
+
+    &+ .level {
+      margin-top: 10px;
+    }
+  }
+
+  .component-tag-name {
+    color: #badc57;
+  }
+
+  .code-content {
+    margin: 0 5px;
+    color: #bb8080;
+  }
+
+  .component-atr {
+    margin-left: 10px;
+    color: #22d3ee;
+  }
+
+  .component-atr-value {
+    color: #bb8080;
+  }
+}

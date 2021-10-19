@@ -6,7 +6,7 @@ type InputProps = {
   className?: string;
   id?: string;
   name?: string;
-  value?: string;
+  value?: string | number;
   placeholder?: string;
   size?: 'sm' | 'md' | 'lg';
   type?: string;
