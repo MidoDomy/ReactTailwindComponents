@@ -14,7 +14,7 @@ type AlertProps = {
 const Alert: React.FC<AlertProps> = ({ children, className, type, icon, text }) => {
   return (
     <div className={`alert alert-${type}${className ? ' '+className : ''}`}>
-      { icon && <Icon name={icon} className="alert-icon" /> }
+      { icon && <Icon icon={icon} className="alert-icon" /> }
       { text ? text : children }
     </div>
   );

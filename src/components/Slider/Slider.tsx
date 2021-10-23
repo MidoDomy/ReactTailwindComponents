@@ -50,14 +50,14 @@ const Slider: React.FC<SliderProps> = ({ children, className, controls, dots, ic
             className="slider-btn slider-btn-prev"
             onClick={SlidePrev} 
           >
-            { iconPrev && <Icon size={40} name={iconPrev} /> }
+            { iconPrev && <Icon size={40} icon={iconPrev} /> }
           </button>
 
           <button 
-            className="slider-btn slider-btn-next transform origin-center rotate-180"
+            className="origin-center transform rotate-180 slider-btn slider-btn-next"
             onClick={SlideNext}
           >
-            { iconNext && <Icon size={40} name={iconNext} /> }
+            { iconNext && <Icon size={40} icon={iconNext} /> }
           </button>
         </>
       }

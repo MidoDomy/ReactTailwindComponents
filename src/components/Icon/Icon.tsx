@@ -4,18 +4,18 @@ import 'assets/scss/component/icon/_icon.scss'
 
 type IconProps = {
   className?: string;
-  name: string;
+  icon: string;
   alt?: string;
   size?: number;
 }
 
-const Icon: React.FC<IconProps> = ({ className, name, alt, size }) => {
-  const icon = require(`assets/icons/${name}.svg`).default;
+const Icon: React.FC<IconProps> = ({ className, icon, alt, size }) => {
+  const src = require(`assets/icons/${icon}.svg`).default;
 
   return (
     <img 
-      className={`icon icon-${name}${className ? ' '+className : ''}`}
-      src={icon} 
+      className={`icon icon-${icon}${className ? ' '+className : ''}`}
+      src={src} 
       alt={alt}
       width={size}
       height={size}

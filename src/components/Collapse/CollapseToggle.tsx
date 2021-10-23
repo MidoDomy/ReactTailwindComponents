@@ -16,8 +16,8 @@ const CollapseToggle: React.FC<CollapseToggleProps> = ({ children, className, he
     >
       { heading ? heading : children }
 
-      <Icon name="plus" />
-      <Icon name="minus" />
+      <Icon icon="plus" />
+      <Icon icon="minus" />
     </button>
   );
 }

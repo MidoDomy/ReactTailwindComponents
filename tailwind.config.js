@@ -26,33 +26,7 @@ module.exports = {
      'full': '100%',
     },
     extend: {
-      textColor: {
-        base: {
-          primary: withOpacity('--color-primary'),
-          secondary: withOpacity('--color-secondary'),
-          light: withOpacity('--color-light'),
-          dark: withOpacity('--color-dark'),
-          success: withOpacity('--color-success'),
-          danger: withOpacity('--color-danger'),
-          warning: withOpacity('--color-warning'),
-          info: withOpacity('--color-info'),
-          disabled: withOpacity('--color-disabled')
-        }
-      },
-      backgroundColor: {
-        base: {
-          primary: withOpacity('--color-primary'),
-          secondary: withOpacity('--color-secondary'),
-          light: withOpacity('--color-light'),
-          dark: withOpacity('--color-dark'),
-          success: withOpacity('--color-success'),
-          danger: withOpacity('--color-danger'),
-          warning: withOpacity('--color-warning'),
-          info: withOpacity('--color-info'),
-          disabled: withOpacity('--color-disabled')
-        }
-      },
-      borderColor: {
+      colors: {
         base: {
           primary: withOpacity('--color-primary'),
           secondary: withOpacity('--color-secondary'),
