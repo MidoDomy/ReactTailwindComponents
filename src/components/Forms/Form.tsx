@@ -13,7 +13,7 @@ type FormProps = {
   className?: string;
   action?: string;
   target?: '_blank' | '_self' | '_parent' | '_top' | string;
-  method?: 'get' | 'post' | string;
+  method?: 'get' | 'post';
 }
 
 const Form: React.FC<FormProps> = ({ children, className, action, target, method }) => {

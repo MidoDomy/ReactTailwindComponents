@@ -1,6 +1,6 @@
 @layer components {
   .row {
     margin: 0 calc(0px - theme("container.padding"));
-    @apply flex;
+    @apply flex flex-wrap;
   }
 }

@@ -6,7 +6,23 @@
 
 @import 'layout/example';
 
+section {
+  margin-bottom: 40px;
+}
+
 hr {
   margin: 10px 0;
   border-color:  red;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
 }

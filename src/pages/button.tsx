@@ -89,10 +89,15 @@ const ButtonsPage: React.FC<IPage> = props => {
       />
 
       <section>
+        <h2 className="mb-5">Import</h2>
+        <p>import Button from 'components/Button/Button'</p>
+      </section>
+
+      <section>
         <h2>Variants</h2>
         <p className="mb-10">These are some of the already styled variants.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Row>
               {variants.map((variant, index) => (
@@ -103,7 +108,7 @@ const ButtonsPage: React.FC<IPage> = props => {
             </Row>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre tabIndex={0} className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html" data-lang="html">
                 <div className="level">
@@ -112,7 +117,7 @@ const ButtonsPage: React.FC<IPage> = props => {
                   </span>
 
                   {variants.map((variant, index) => (
-                    <div className="level p" key={index}>
+                    <div className="level" key={index}>
                       <span className="code-tag">
                         &lt;<span className="component-tag-name">Col</span>
                           
@@ -162,7 +167,7 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Outline style</h2>
         <p className="mb-10">These are some of the already styled variants.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Row>
               {variants.map((variant, index) => (
@@ -173,7 +178,7 @@ const ButtonsPage: React.FC<IPage> = props => {
             </Row>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -236,7 +241,7 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Sizes</h2>
         <p className="mb-10">There are also several sizes.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Row align="center">
               <Col cols='auto'>
@@ -253,7 +258,7 @@ const ButtonsPage: React.FC<IPage> = props => {
             </Row>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -318,12 +323,12 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Block</h2>
         <p className="mb-10">Block button takes full width.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Button block>Button block</Button>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -353,12 +358,12 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Disabled</h2>
         <p className="mb-10">Disabled btn styles.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Button disabled>Button disabled</Button>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -388,12 +393,12 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Link button</h2>
         <p className="mb-10">If we add a href or that attribute, even though it looks like a button it's actually a link.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Button href="#">Button link</Button>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -443,12 +448,12 @@ const ButtonsPage: React.FC<IPage> = props => {
         <h2>Button functionality</h2>
         <p className="mb-10">We can add button functionality using the onClick attribute.</p>
 
-        <div className="mb-10 example">
+        <div className="example">
           <div className="p-10 border rounded-t-md example-preview">
             <Button onClick={() => alert('Clicked')}>Button</Button>
           </div>
 
-          <div className="overflow-hidden rounded-b-md example-code">
+          <div className="overflow-hidden example-code">
             <pre className="p-6 overflow-x-auto text-sm leading-snug text-white bg-black bg-opacity-75 scrollbar-none language-html">
               <code className="language-html">
                 <div className="level">
@@ -473,11 +478,6 @@ const ButtonsPage: React.FC<IPage> = props => {
             </pre>
           </div>
         </div>
-      </section>
-
-      <section>
-        <h2 className="mb-5">Import</h2>
-        <p>import Button from 'components/Button/Button'</p>
       </section>
     </div>
   );

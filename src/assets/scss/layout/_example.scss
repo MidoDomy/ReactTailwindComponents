@@ -1,4 +1,17 @@
 .example {
+  &+ .example {
+    margin-top: 40px;
+  }
+
+  .example-preview + .example-code {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .example-code {
+    border-radius: 10px;
+  }
+
   .level {
     .level {
       margin-left: 10px;
@@ -16,6 +29,10 @@
   .code-content {
     margin: 0 5px;
     color: #bb8080;
+  }
+
+  .component {
+    display: block;
   }
 
   .component-atr {

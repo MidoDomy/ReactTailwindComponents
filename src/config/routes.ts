@@ -4,7 +4,12 @@ import HomePage from "pages/home";
 import GridPage from "pages/grid";
 import ButtonPage from "pages/button";
 import ImagePage from "pages/image";
-import InputPage from "pages/input";
+import FormPage from "pages/form/form";
+import LabelPage from "pages/form/label";
+import InputPage from "pages/form/input";
+import GroupPage from "pages/form/group";
+import SelectPage from "pages/form/select";
+import TextareaPage from "pages/form/textarea";
 import AlertPage from "pages/alert";
 import CollapsePage from "pages/collapse";
 import DropdownPage from "pages/dropdown";
@@ -37,9 +42,39 @@ const routes: IRoute[] = [
     exact: true
   },
   {
+    path: '/form',
+    name: 'Form',
+    component: FormPage,
+    exact: true
+  },
+  {
+    path: '/label',
+    name: 'Label',
+    component: LabelPage,
+    exact: true
+  },
+  {
     path: '/input',
     name: 'Input',
     component: InputPage,
+    exact: true
+  },
+  {
+    path: '/group',
+    name: 'Group',
+    component: GroupPage,
+    exact: true
+  },
+  {
+    path: '/select',
+    name: 'Select',
+    component: SelectPage,
+    exact: true
+  },
+  {
+    path: '/textarea',
+    name: 'Textarea',
+    component: TextareaPage,
     exact: true
   },
   {
